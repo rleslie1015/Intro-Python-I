@@ -41,6 +41,12 @@ print(y)
 x = input("Enter comma-separated numbers: ").split(',')
 
 # What do you need between the square brackets to make it work?
+
+# Since `x` is a string, the `%` operator is treated as a string
+# interpolation operator. The error occurs because no format specifier
+# is provided.
+
+# This tells the compiler that % is used as the modulus operator
 y = [num for num in x if int(num) % 2 == 0]
 
 print(y)
