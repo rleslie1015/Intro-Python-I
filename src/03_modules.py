@@ -10,17 +10,17 @@ level operating system functionality.
 
 import sys
 
-import fileinput
+# import fileinput
 # See docs for the sys module: https://docs.python.org/3.7/library/sys.html
 
 # Print out the command line arguments in sys.argv, one per line:
 # YOUR CODE HERE
-# args = sys.argv
-# print("sys.argv is: ")
+args = sys.argv
+print("sys.argv is: ")
 # print(args)
-print("file input is: ")
-# for line in fileinput.input():
-#     print(line)
+print("sys argv is: ")
+for line in args:
+    print(line)
 
 # Print out the OS platform you're using:
 # YOUR CODE HERE
